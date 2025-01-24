@@ -1,0 +1,1 @@
+This bug occurs when using the `useEffect` hook in React Native with a dependency array that includes a function.  The function's reference changes on every render, causing the effect to run on every render even if the function's behavior hasn't changed. This leads to performance issues and unexpected behavior.
